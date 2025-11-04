@@ -1,0 +1,23 @@
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: linear-gradient(#111111, #1c1c1c);
+}
+
+.label.bot-bubble {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #f2f2f2;
+    -fx-padding: 8 12 8 12;
+    -fx-background-radius: 8;
+}
+
+.label.user-bubble {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: white;
+    -fx-padding: 8 12 8 12;
+    -fx-background-radius: 8;
+}
+
+.button {
+    -fx-background-color: #4c4cff;
+    -fx-text-fill: white;
+}

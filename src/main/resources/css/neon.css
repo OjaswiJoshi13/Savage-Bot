@@ -1,0 +1,57 @@
+.root {
+    -fx-font-family: "Consolas", "Monospace";
+    -fx-background-color: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.scroll-pane {
+    -fx-background: transparent;
+}
+
+.vbox {
+    -fx-background-color: transparent;
+}
+
+/* bot bubble */
+.label.bot-bubble {
+    -fx-background-color: linear-gradient(to right, rgba(255,50,50,0.15), rgba(0,200,255,0.12));
+    -fx-padding: 10 14 10 14;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: rgba(255,255,255,0.06);
+    -fx-border-width: 1;
+    -fx-text-fill: #e6f7ff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 4,0,0,2);
+}
+
+/* user bubble */
+.label.user-bubble {
+    -fx-background-color: linear-gradient(to right, rgba(50,255,100,0.12), rgba(120,120,255,0.08));
+    -fx-padding: 10 14 10 14;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: rgba(255,255,255,0.03);
+    -fx-border-width: 1;
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 4,0,0,2);
+}
+
+/* buttons and input */
+.button {
+    -fx-background-color: linear-gradient(#ff416c, #833ab4);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 8;
+}
+
+.text-field {
+    -fx-background-color: rgba(255,255,255,0.06);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255,255,255,0.5);
+    -fx-background-radius: 8;
+}
+
+/* scroll bar customization */
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
