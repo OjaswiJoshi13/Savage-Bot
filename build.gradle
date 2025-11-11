@@ -1,0 +1,40 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'com.savagebot.app'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+}
+
+javafx {
+    version = '17.0.17'
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.graphics', 'javafx.base' ]
+}
+
+dependencies {
+    // Google Cloud + Gemini
+    implementation platform('com.google.cloud:libraries-bom:26.34.0')
+    implementation 'com.google.cloud:google-cloud-vertexai'
+
+    // Local json.jar for config handling
+    implementation files('libs/json.jar')
+}
+
+application {
+    mainClass = 'com.savagebot.app.Main'
+
+    // Path to your local JavaFX SDK
+    applicationDefaultJvmArgs = [
+        "--module-path", "C:/Program Files/javafx-sdk-17.0.17/lib",
+        "--add-modules", "javafx.controls,javafx.fxml"
+    ]
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
